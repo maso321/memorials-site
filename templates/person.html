@@ -1,28 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>{{fullName}} — Мемориал</title>
-  <link rel="stylesheet" href="/assets/site.css" />
-  {{noindex}}
-</head>
-<body>
-  <main class="wrap">
-    <h1>{{fullName}}</h1>
-    <p class="muted">{{birthDate}} — {{deathDate}}</p>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{fullName}}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- путь с учётом GitHub Pages (= имя репозитория в URL) -->
+    <link rel="stylesheet" href="/memorials-site/assets/site.css" />
+  </head>
+  <body class="wrap">
+    <main class="container">
+      <h1>{{fullName}}</h1>
 
-    <article class="bio">{{bioHtml}}</article>
+      <p class="muted">
+        <strong>Годы жизни:</strong> {{birthDate}} — {{deathDate}}
+      </p>
 
-    <p>
-      <img src="/people/{{id}}/qr.png" alt="QR" width="180" height="180" />
-    </p>
+      {{photoBlock}}
 
-    {{photos}}
-    {{videos}}
+      <p>{{bio}}</p>
 
-    <p><a href="/">← ко всем мемориалам</a></p>
-  </main>
-</body>
+      <p><a href="/memorials-site/">← На главную</a></p>
+    </main>
+  </body>
 </html>
 
