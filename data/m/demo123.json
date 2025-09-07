@@ -1,0 +1,10 @@
+{
+  "id": "demo123",
+  "fullName": "Иван Иванов",
+  "birthDate": "1942-05-11",
+  "deathDate": "2020-09-30",
+  "bio": "Короткая биография.",
+  "photos": [],
+  "videoEmbeds": [],
+  "seoIndexing": false
+}
