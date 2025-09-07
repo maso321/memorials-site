@@ -2,8 +2,16 @@
   "name": "memorials-site",
   "private": true,
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js",
+    "generate:qr": "node generate-qr.js",
+    "build:people": "node build-people.js",
+    "clean": "rm -rf public/*"
   },
-  "devDependencies": { "glob": "^11.0.0" }
+  "dependencies": {
+    "qrcode": "^1.5.4",
+    "glob": "^11.0.0"
+  }
 }
+

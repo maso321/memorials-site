@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{fullName}} — Мемориал</title>
+  <link rel="stylesheet" href="/assets/site.css" />
+  {{noindex}}
+</head>
+<body>
+  <main class="wrap">
+    <h1>{{fullName}}</h1>
+    <p class="muted">{{birthDate}} — {{deathDate}}</p>
+
+    <article class="bio">{{bioHtml}}</article>
+
+    <p>
+      <img src="/people/{{id}}/qr.png" alt="QR" width="180" height="180" />
+    </p>
+
+    {{photos}}
+    {{videos}}
+
+    <p><a href="/">← ко всем мемориалам</a></p>
+  </main>
+</body>
+</html>
+
